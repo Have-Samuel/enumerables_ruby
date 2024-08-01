@@ -81,3 +81,11 @@ newer = classes.map { |item| item.gsub('small', 'big') }
 
 puts newer
 puts classes
+
+# Map method with numbers, It's non-destructive
+numbers = [1200, 1300, 1400, 1500, 1600]
+
+salary_deduct = numbers.map { |num| num - 750 }
+
+puts salary_deduct
+puts numbers
