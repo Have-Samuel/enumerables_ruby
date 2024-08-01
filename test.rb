@@ -21,3 +21,11 @@ fruits.each { |fruit| puts "I Love all these #{fruit} fruits" }
 fruits.each do |fruit|
   print "I Love all these #{fruit} fruits"
 end
+
+# THe Do...end block is used when you have multiple lines of code to execute, and it's the recomended way to use the each method, other than the curly braces {....}.
+arr = [1, 2, 3, 4, 5]
+arr.each do |num|
+  num *= 3
+  puts "That's the new digit: #{num}"
+end
+
