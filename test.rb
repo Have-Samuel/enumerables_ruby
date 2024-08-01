@@ -38,3 +38,10 @@ nums.each { |key, value| puts "#{key} is #{value}" }
 nums.each do |key, value|
   puts "#{key} is #{value}"
 end
+
+# Each Method is non-destructive, it doesn't change the original array or hash
+names = ['hugh', 'larry', 'moe', 'curly', 'shemp', 'joe']
+
+names.each { |name| puts name.upcase }
+
+puts names
