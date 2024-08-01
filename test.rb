@@ -29,3 +29,12 @@ arr.each do |num|
   puts "That's the new digit: #{num}"
 end
 
+# Each with Hashes
+nums = {'one': 1, 'two': 2}
+
+nums.each { |key, value| puts "#{key} is #{value}" }
+
+# OR 
+nums.each do |key, value|
+  puts "#{key} is #{value}"
+end
