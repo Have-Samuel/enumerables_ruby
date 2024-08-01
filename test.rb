@@ -45,3 +45,11 @@ names = ['hugh', 'larry', 'moe', 'curly', 'shemp', 'joe']
 names.each { |name| puts name.upcase }
 
 puts names
+
+# Each with Index
+schools = ['Harvard', 'MIT', 'Stanford', 'Yale', 'Princeton']
+
+schools.each_with_index do |school, index|
+  puts "#{school}" if index.odd?
+end
+
