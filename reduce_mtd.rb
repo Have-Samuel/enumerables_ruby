@@ -43,5 +43,6 @@ output = votes.reduce(Hash.new(0)) do |result, vote|
 end
 
 puts output
+puts votes
 #=> {"Bob's Dirty Burger Shack"=>2, "St. Mark's Bistro"=>1}
 
