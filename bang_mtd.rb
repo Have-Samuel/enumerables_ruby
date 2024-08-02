@@ -12,3 +12,6 @@ caps3 = friends.map! { |friend| friend.upcase }
 
 puts caps3
 puts friends
+
+# Bang methods are not recommended, they are destructive and can't be undone.
+# The map method is non-destructive, it doesn't change the original array.
