@@ -89,3 +89,40 @@ salary_deduct = numbers.map { |num| num - 750 }
 
 puts salary_deduct
 puts numbers
+
+# Still using MAP method
+identity = ['Alice', 'Bob', 'Charlie', 'David', 'Eve']
+
+identity.map do |name|
+  puts name.upcase
+end
+
+# OR
+identity.map { |name| puts name.upcase }
+
+puts identity
+
+# Double the numbers in the array
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+output = numbers.map { |num| num * 2 }
+
+puts output
+# Convert the string numbers to integers
+int = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+
+res = int.map { |num| num.to_i }
+
+puts res
+p res
+p int
+
+# Convert the hash values to symbols: Fast convert the string values to symbols
+#                                   : second, convert the values to symbols
+h = { mother: 'Susan', father: 'John', sister: 'Jane', brother: 'Joe' }
+show = h.map { |k, v| [k, v.to_sym] }.to_h # Convert the values to symbols
+# to_sym => Convert the string to symbols
+
+puts show
+p h
+p show
+
